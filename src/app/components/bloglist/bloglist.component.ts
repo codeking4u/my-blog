@@ -40,8 +40,8 @@ export class BloglistComponent implements OnInit {
         blogimage: 'any1',
         tags: 'tag',
         likes: '2',
-        description: 'This is post 3 content'
-        ,
+        description: 'This is post 3 content',
+      },
         {
           id: 4,
           userid: 12,
@@ -52,5 +52,7 @@ export class BloglistComponent implements OnInit {
           likes: '2',
           description: 'This is post 4 content'
         }
+      ];
+    }
   
 }
