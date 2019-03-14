@@ -1,1 +1,12 @@
-<app-blog></app-blog>
+<div class="container">
+    <div class="content-wrapper">
+        <div class="post-container">
+            <div class="row grid-view" >
+                <div class="col-sm-4 grid-col" *ngFor="let blog of blogs">
+                    <app-blog [blog]="blog"></app-blog>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
