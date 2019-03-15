@@ -7,13 +7,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { BloglistComponent } from './components/bloglist/bloglist.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { BlogsService } from './services/blogs.service';
+import { AddBlogComponent } from './components/add-blog/add-blog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     BloglistComponent,
-    BlogComponent
+    BlogComponent,
+    AddBlogComponent
   ],
   imports: [
     BrowserModule,
