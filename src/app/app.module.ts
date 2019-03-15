@@ -1,12 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BloglistComponent } from './components/bloglist/bloglist.component';
 import { BlogComponent } from './components/blog/blog.component';
-
+import { BlogsService } from './services/blogs.service';
 
 @NgModule({
   declarations: [
@@ -16,9 +16,10 @@ import { BlogComponent } from './components/blog/blog.component';
     BlogComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [BlogsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -3,12 +3,12 @@
     <div class="grid-image" ></div>
     <div class="grid-text">
         <div class="post-tags">
-            <span class="tag-badge">Story</span>
+            <span class="tag-badge">{{blog.tags}}</span>
         </div>
-        <h4 class="post-title">Streets</h4>
+        <h4 class="post-title">{{blog.name}}</h4>
         <div class="post-meta">
             <span class="post-author meta-item">
-                <span class="glyphicon glyphicon-user"></span> Denny Go
+                <span class="glyphicon glyphicon-user"></span> {{blog.user}}
             </span>
             <span class="date meta-item">
                 <span class="glyphicon glyphicon-time"></span> 1 days ago
@@ -18,14 +18,14 @@
                     <span class="glyphicon glyphicon-comment"></span> 0
                 </span>
                 <span class="meta-views meta-item">
-                    <span class="glyphicon glyphicon-fire"></span> 0
+                    <span class="glyphicon glyphicon-fire"></span> {{blog.likes}}
                 </span>
             </div>
             <div class="clearfix"></div>
         </div>
     </div>
     <div class="grid-hover-text">
-        <div class="post-excerpt"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.  the 1960s with the release of Letraset sheets.</div>
+        <div class="post-excerpt">{{blog.description}}</div>
     </div>
 </a>
 </div>
