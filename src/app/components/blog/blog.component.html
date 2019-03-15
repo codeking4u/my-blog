@@ -1,31 +1,26 @@
-<div class="grid-item grid-full">
-<a href="#" class="grid-link" target="_self">
-    <div class="grid-image" ></div>
-    <div class="grid-text">
-        <div class="post-tags">
-            <span class="tag-badge">{{blog.tags}}</span>
+<div class="card">
+    <div class="top-image-holder">
+        <img class="card-img-top" src="{{blog.blogimage}}">
+        <div>{{'toaho asdjoasd asd as das d asd asdasd'}}</div>
+    </div>
+    <div class="card-block">
+        <figure class="profile">
+            <img src="{{blog.avatar}}" class="profile-avatar" alt="">
+        </figure>
+        <h4 class="card-title mt-3">{{blog.name}}</h4>
+        <div class="meta">
+            <a>Tags: {{blog.tags}}</a>
         </div>
-        <h4 class="post-title">{{blog.name}}</h4>
-        <div class="post-meta">
-            <span class="post-author meta-item">
-                <span class="glyphicon glyphicon-user"></span> {{blog.user}}
-            </span>
-            <span class="date meta-item">
-                <span class="glyphicon glyphicon-time"></span> 1 days ago
-            </span>
-            <div class="box-alignright pull-right">
-                <span class="meta-comment meta-item">
-                    <span class="glyphicon glyphicon-comment"></span> 0
-                </span>
-                <span class="meta-views meta-item">
-                    <span class="glyphicon glyphicon-fire"></span> {{blog.likes}}
-                </span>
-            </div>
-            <div class="clearfix"></div>
+        <div class="card-text">
+            {{blog.description}}
         </div>
     </div>
-    <div class="grid-hover-text">
-        <div class="post-excerpt">{{blog.description}}</div>
+    <div class="card-footer">
+            <span><i class="glyphicon glyphicon-calendar"></i> {{blog.createdAt}} </span>
+                <span>|</span>
+                <span><i class="glyphicon glyphicon-comment"></i> {{blog.likes}} Likes</span>
+                <span>|</span>
+                <span><i class="glyphicon glyphicon-comment"></i> 2 comments</span>
+            <button class="btn btn-secondary float-right btn-sm">show</button>
     </div>
-</a>
 </div>

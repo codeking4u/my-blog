@@ -2,9 +2,10 @@
     <div class="content-wrapper">
         <div class="post-container">
             <div class="row grid-view" >
-                <div class="col-sm-4 grid-col" *ngFor="let blog of blogs">
+                <div class="col-sm-9 grid-col" *ngFor="let blog of blogs">
                     <app-blog [blog]="blog"></app-blog>
                 </div>
+                <div class="col-sm-3"></div>
             </div>
         </div>
     </div>
