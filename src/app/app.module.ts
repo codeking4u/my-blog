@@ -8,6 +8,7 @@ import { BloglistComponent } from './components/bloglist/bloglist.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { BlogsService } from './services/blogs.service';
 import { AddBlogComponent } from './components/add-blog/add-blog.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AddBlogComponent } from './components/add-blog/add-blog.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [BlogsService],
   bootstrap: [AppComponent]
