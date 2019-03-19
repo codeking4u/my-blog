@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -9,6 +9,7 @@ import { BlogComponent } from './components/blog/blog.component';
 import { BlogsService } from './services/blogs.service';
 import { AddBlogComponent } from './components/add-blog/add-blog.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { BlogPageComponent } from './components/blog-page/blog-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AppRoutingModule } from './/app-routing.module';
     HeaderComponent,
     BloglistComponent,
     BlogComponent,
-    AddBlogComponent
+    AddBlogComponent,
+    BlogPageComponent
   ],
   imports: [
     BrowserModule,

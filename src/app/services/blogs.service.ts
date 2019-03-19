@@ -17,4 +17,8 @@ export class BlogsService {
   addBlog(data):Observable<any>{
     return this.http.post(this.blogsURL,data,httpOptions);
   }
+
+  viewBlog(id):Observable<any>{
+    return this.http.get(this.blogsURL+'/'+id);
+  }
 }

@@ -1,11 +1,10 @@
 <div class="card">
     <div class="top-image-holder">
-        <img class="card-img-top" src="{{blog.blogimage}}">
-        <div>{{'toaho asdjoasd asd as das d asd asdasd'}}</div>
+        <img class="card-img-top" src="{{ blog.blogimage }}">
     </div>
     <div class="card-block">
         <figure class="profile">
-            <img src="{{blog.avatar}}" class="profile-avatar" alt="">
+            <img src="{{ blog.avatar }}" class="profile-avatar" alt="">
         </figure>
         <h4 class="card-title mt-3">{{blog.name}}</h4>
         <div class="meta">
@@ -21,6 +20,6 @@
                 <span><i class="glyphicon glyphicon-comment"></i> {{blog.likes}} Likes</span>
                 <span>|</span>
                 <span><i class="glyphicon glyphicon-comment"></i> 2 comments</span>
-            <button class="btn btn-secondary float-right btn-sm">show</button>
+            <button class="btn btn-secondary float-right btn-sm" routerLink="/blog/{{blog.id}}">Read</button>
     </div>
 </div>
